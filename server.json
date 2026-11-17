@@ -1,0 +1,44 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.scrapier/scrapier",
+  "title": "Scrapier",
+  "description": "Structured public web data from Amazon, YouTube, TikTok, LinkedIn, Google Maps, Airbnb and more.",
+  "version": "0.2.0",
+  "websiteUrl": "https://docs.scrapier.io/ai/mcp/",
+  "repository": {
+    "url": "https://github.com/scrapierio-ai/scrapier-mcp",
+    "source": "github",
+    "id": "1461191516"
+  },
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/scrapierio-ai/scrapier-mcp/main/assets/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    },
+    {
+      "src": "https://raw.githubusercontent.com/scrapierio-ai/scrapier-mcp/main/assets/icon-128.png",
+      "mimeType": "image/png",
+      "sizes": ["128x128"]
+    },
+    {
+      "src": "https://raw.githubusercontent.com/scrapierio-ai/scrapier-mcp/main/assets/icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": ["any"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.scrapier.io/mcp",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "description": "Your Scrapier API key from app.scrapier.io/dashboard/api-keys. Optional for clients that support OAuth sign-in.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
