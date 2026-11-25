@@ -46,7 +46,7 @@ See the full list in the [API reference](https://docs.scrapier.io/api-reference/
 | `list_platforms` | Free | Lists every platform and how many endpoints it has. |
 | `search_endpoints` | Free | Finds endpoints by keyword. |
 | `get_endpoint_schema` | Free | Shows the parameters for one endpoint. |
-| `run_scrape` | The endpoint's credit cost (1 to 4) | Runs one endpoint and returns one page of results. |
+| `run_scrape` | The endpoint's credit cost (10 to 40) | Runs one endpoint and returns one page of results. |
 | `get_scrape_result` | Free | Fetches a result by ID. Kept for older clients. |
 | `get_account` | Free | Shows your email, plan and credit balance. |
 
@@ -160,7 +160,7 @@ Setup guides for more clients (Antigravity, ChatGPT and others) are in the [docs
 
 ## Limits
 
-- **Sign-in connections (Claude, ChatGPT, Codex login):** 60 tool calls per minute and 600 per hour for each connection, and up to 3 scrapes running at once across all your connectors. Each connection has a daily limit of 1,000 credits per UTC day by default, adjustable up to 10,000 under [Connected apps](https://app.scrapier.io/dashboard/connected-apps).
+- **Sign-in connections (Claude, ChatGPT, Codex login):** 60 tool calls per minute and 600 per hour for each connection, and up to 3 scrapes running at once across all your connectors. Each connection has a daily limit of 10,000 credits per UTC day by default, adjustable up to 100,000 under [Connected apps](https://app.scrapier.io/dashboard/connected-apps).
 - **API keys:** the same limits as the REST API; see [Rate limits](https://docs.scrapier.io/rate-limits/). On a 429, wait and retry.
 
 ## Safety
